@@ -13,5 +13,6 @@ RUN apk update && apk upgrade &&\
 ENV ANSIBLE_HOST_KEY_CHECKING False
 
 USER ansible
+WORKDIR /home/ansible
 
 ENTRYPOINT ["/bin/bash"]
