@@ -7,6 +7,7 @@ RUN apk update && apk upgrade &&\
     easy_install-2.7 pip &&\
     pip install -U pyopenssl ndg-httpsclient pyasn1 &&\
     pip install -U ansible &&\
+    apk del gcc musl-dev libffi-dev python-dev openssl-dev --purge &&\
     adduser ansible -D -G wheel -s /bin/bash &&\
     sed -i -e "s/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g" /etc/sudoers
 
