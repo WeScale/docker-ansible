@@ -5,7 +5,7 @@ build published to the public Docker Hub Registry.
 
 ## Base Docker Image
 
-[gliderlabs/alpine:3.1](https://registry.hub.docker.com/u/gliderlabs/alpine/)
+[alpine:3.4](https://hub.docker.com/_/alpine/)
 
 ## Installation
 
